@@ -5,5 +5,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      name: "Show pushed"
-      run: echo "Pushed Successfully"
+      - name: Show push
+        run: echo "Push successful"
