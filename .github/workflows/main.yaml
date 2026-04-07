@@ -7,3 +7,5 @@ jobs:
     steps:
       - name: Show push
         run: echo "Push successful"
+      - name: Show name
+        run: ls
