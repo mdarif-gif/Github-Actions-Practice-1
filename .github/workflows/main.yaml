@@ -14,8 +14,10 @@ jobs:
       - name: Show name
         run: echo "$ARI "
       - name: Show secret
-        run: echo "${secret.ARIF} "
-        
+        run: echo "${ARIF} "
+        env:
+          ARIF: ${{ secrets.ARIF }}
+
   test:
     runs-on: ubuntu-latest
     needs: build
