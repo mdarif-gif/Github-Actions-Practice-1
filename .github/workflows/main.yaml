@@ -1,7 +1,6 @@
 name: My First Workflow
 
-on: 
-  workflow_dispatch:
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,3 +9,8 @@ jobs:
         run: echo "Push successful"
       - name: Show name
         run: ls
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show test
+        run: echo " tested"
